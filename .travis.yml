@@ -1,0 +1,25 @@
+language: node_js
+sudo: true
+node_js:
+  - stable
+cache:
+  directories:
+    - node_modules
+# Uncomment following lines if you want to add ENV VARIABLES
+# Specifcy the ENV VARIABLES in Travis-CI and in create-env-file.sh
+# ENV VARIABLES will be injected upon building by Travis-CI
+# before_deploy:
+# - sudo chmod +x ./create_env_file.sh
+# - sudo bash ./create_env_file.sh
+# - cat ./.env
+# - cat ./app.yaml
+deploy:
+  provider: gae
+  keyfile: YOUR_GOOGLE_APP_ENGINE_SERVICE_ACCOUNT_KEY_FILE
+  project: YOUR_PROJECT_ID
+  skip_cleanup: true
+  on:
+    branch: master
+before_install:
+  - openssl aes-256-cbc -K $encrypted_28c2eff3ce4a_key -iv $encrypted_28c2eff3ce4a_iv
+    -in gae.json.enc -out gae.json -d
