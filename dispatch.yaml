@@ -1,0 +1,3 @@
+dispatch:
+  - url: "YOUR_DOMAIN/*"
+    service: default

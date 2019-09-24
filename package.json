@@ -1,0 +1,45 @@
+{
+  "name": "node-exp-pp-template",
+  "version": "1.0.0",
+  "description": "Template to create basic NodeJS, ExpressJS API with PassportJS authentication.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "mocha"
+  },
+  "author": "Nipuna Weerasekara",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cloudscraper": "^4.1.4",
+    "concurrently": "^4.1.0",
+    "express": "^4.17.0",
+    "express-async-await": "^1.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.0",
+    "mongoose": "^5.6.9",
+    "node-fetch": "^2.6.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "request": "^2.88.0",
+    "serve-favicon": "^2.5.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niweera/node-exp-pp-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Niweera/node-exp-pp-template/issues"
+  },
+  "homepage": "https://github.com/Niweera/node-exp-pp-template#readme"
+}
